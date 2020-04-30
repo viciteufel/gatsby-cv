@@ -33,7 +33,7 @@
     "start": "gatsby develop",
     "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
     "deploy": "gh-pages -d public",
-    "prod": "gatsby serve"
+    "prod": "gatsby serve --prefix-paths"
   },
   "devDependencies": {
     "@types/classnames": "^2.2.9",

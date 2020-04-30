@@ -81,6 +81,7 @@ const CV = (props: Props): JSX.Element => {
   }
 
   const didSelectLanguage = (language: Language): void => {
+    saveScrollPosition();
     navigate(`${language.code}/${items[selectedItem].path}`);
   };
 

@@ -23,7 +23,7 @@ module.exports = {
         name: `Victoria Teufel CV`,
         short_name: `CV`,
         start_url: `/`,
-        background_color: `#f7f0eb`,
+        background_color: `#80425F`,
         theme_color: `#ffffff`,
         display: `standalone`,
         icon: `src/assets/favicon.png`,
