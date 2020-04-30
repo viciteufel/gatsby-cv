@@ -12,7 +12,7 @@ export const ProjectList = (props: Props): JSX.Element => (
       <tbody>
         {props.projects.map((project, index: number) => (
           <tr key={index}>
-            <td style={{ width: '1px', whiteSpace: 'nowrap', padding: '5px 10px 5px 0px', verticalAlign: 'baseline' }}>
+            <td style={{ minWidth: 'calc(100vw * 0.1)', padding: '5px 10px 5px 0px', verticalAlign: 'baseline' }}>
               {project.title}
             </td>
             <td style={{ padding: '5px 0px' }}>{project.details}</td>
