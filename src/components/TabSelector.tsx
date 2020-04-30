@@ -17,7 +17,7 @@ export const TabSelector = (props: Props): JSX.Element => (
   <main>
     {props.items.map((item: Item, index: number) => (
       <span key={index} onClick={(): void => props.onClick(index)}>
-        <input type="radio" name="tabs" checked={item.checked} />
+        <input type="radio" name="tabs" checked={item.checked} readOnly />
         <label style={{ width: '50%' }}>
           <i className={`mr-2 ${item.icon}`} /> <span className="	d-none d-md-block">{item.name}</span>
         </label>

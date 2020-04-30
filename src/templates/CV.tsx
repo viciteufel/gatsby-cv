@@ -9,10 +9,12 @@ import { Project, Props as ProjectProps } from './../components/Project';
 import { ResumeSkillList } from './../components/ResumeSkillList';
 import { TabSelector } from './../components/TabSelector';
 import { getTranslatedLabel, initLocale } from './../translations/provider';
+import { LanguageSelection, Language } from './../components/LanguageSelection';
 import './CV.css';
 const HtmlToReactParser = require('html-to-react').Parser;
 const htmlToReactParser = new HtmlToReactParser();
 import Lines from './../assets/images/backgrounds/lines.png';
+import { useState } from 'react';
 
 let scrollTo = 0;
 
@@ -34,8 +36,16 @@ const saveScrollPosition = (): void => {
   }
 };
 
+const german = { title: 'Deutsch', code: 'de' };
+const english = { title: 'English', code: 'en' };
+
 const CV = (props: Props): JSX.Element => {
   initLocale(props.pageContext.locale);
+
+  const [language, setLanguage] = useState({
+    selectedLanguage: german,
+    availableLanguages: [english]
+  });
 
   const isWorkSelected = (): boolean => {
     return (
@@ -45,7 +55,7 @@ const CV = (props: Props): JSX.Element => {
   };
 
   const [selectedItem, setSelectedItem] = React.useState(isWorkSelected() ? 0 : 1);
-  const [items, setItems] = React.useState([
+  const [items] = React.useState([
     {
       name: getTranslatedLabel('WORK_XP'),
       path: 'work',
@@ -62,13 +72,14 @@ const CV = (props: Props): JSX.Element => {
 
   React.useEffect(() => {
     setTimeout(() => scrollToY(), 100);
-  });
+    const languages = [german, english];
+    const selectedLanguage = languages.find(l => window.location.pathname.includes(`/${l.code}/`));
+    const availableLanguages = languages.filter(l => !window.location.pathname.includes(`/${l.code}/`));
+    setLanguage({ selectedLanguage, availableLanguages });
+  }, [window.location.pathname]);
 
-  const onLanguageClick = (pathname: string): void => {
-    saveScrollPosition();
-    pathname.includes('/de/')
-      ? navigate(`/en/${items[selectedItem].path}`)
-      : navigate(`/de/${items[selectedItem].path}`);
+  const didSelectLanguage = (language: Language): void => {
+    navigate(`${language.code}/${items[selectedItem].path}`);
   };
 
   return (
@@ -89,16 +100,11 @@ const CV = (props: Props): JSX.Element => {
             }}
           />
           <div className="resume-body p-5" style={{ backgroundImage: `url(${Lines})`, overflow: 'hidden' }}>
-            <div className="text-right">
-              <button
-                type="button"
-                className="btn"
-                onClick={() => onLanguageClick(props.location.pathname)}
-                style={{ cursor: 'pointer', backgroundColor: `#80425F`, color: 'white' }}
-              >
-                {props.pageContext.locale === 'de' ? 'EN' : 'DE'}
-              </button>
-            </div>
+            <LanguageSelection
+              currentLanguage={language.selectedLanguage}
+              availableLanguages={language.availableLanguages}
+              onLanguageSelected={didSelectLanguage}
+            />
 
             <section className="resume-section summary-section mb-5">
               <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
