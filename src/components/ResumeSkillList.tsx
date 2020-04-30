@@ -6,7 +6,7 @@ interface Props {
   skills: Skill[];
 }
 
-export const ResumeSkillList = (props: Props) => (
+export const ResumeSkillList = (props: Props): JSX.Element => (
   <div className="resume-skill-item">
     <h4 className="resume-skills-cat font-weight-bold">{props.title}</h4>
     <ul className="list-unstyled mb-4">

@@ -1,7 +1,6 @@
 // tslint:disable: jsx-no-lambda
 import { graphql, navigate } from 'gatsby';
 import * as React from 'react';
-import { CertificationList } from './../components/CertificationList';
 import { EducationList } from './../components/EducationList';
 import { Header } from './../components/Header';
 import { LanguageList } from './../components/LanguageList';
@@ -13,8 +12,7 @@ import { getTranslatedLabel, initLocale } from './../translations/provider';
 import './CV.css';
 const HtmlToReactParser = require('html-to-react').Parser;
 const htmlToReactParser = new HtmlToReactParser();
-const Lines = require('./../assets/images/backgrounds/lines.png');
-const Paper = require('../../src/assets/images/backgrounds/paper.png');
+import Lines from './../assets/images/backgrounds/lines.png';
 
 let scrollTo = 0;
 
@@ -24,22 +22,22 @@ interface Props {
   pageContext: any;
 }
 
-const scrollToY = () => {
+const scrollToY = (): void => {
   if (window && scrollTo !== 0) {
     window.scrollTo(0, scrollTo);
   }
 };
 
-const saveScrollPosition = () => {
+const saveScrollPosition = (): void => {
   if (document) {
     scrollTo = document.documentElement.scrollTop;
   }
 };
 
-export default (props: Props) => {
+const CV = (props: Props): JSX.Element => {
   initLocale(props.pageContext.locale);
 
-  const isWorkSelected = () => {
+  const isWorkSelected = (): boolean => {
     return (
       (!props.location.pathname.includes('work') && !props.location.pathname.includes('opensource')) ||
       props.location.pathname.includes('work')
@@ -66,7 +64,7 @@ export default (props: Props) => {
     setTimeout(() => scrollToY(), 100);
   });
 
-  const onLanguageClick = (pathname: string) => {
+  const onLanguageClick = (pathname: string): void => {
     saveScrollPosition();
     pathname.includes('/de/')
       ? navigate(`/en/${items[selectedItem].path}`)
@@ -83,10 +81,10 @@ export default (props: Props) => {
             name={props.data.social.nodes[0].childSocialJson.name}
             phone={props.data.social.nodes[0].childSocialJson.phone}
             email={props.data.social.nodes[0].childSocialJson.email}
+            address={props.data.social.nodes[0].childSocialJson.address}
+            birthday={props.data.social.nodes[0].childSocialJson.birthday}
             socialMedia={{
               github: props.data.social.nodes[0].childSocialJson.social.github,
-              linkedin: props.data.social.nodes[0].childSocialJson.social.linkedin,
-              website: props.data.social.nodes[0].childSocialJson.social.website,
               xing: props.data.social.nodes[0].childSocialJson.social.xing
             }}
           />
@@ -96,7 +94,7 @@ export default (props: Props) => {
                 type="button"
                 className="btn"
                 onClick={() => onLanguageClick(props.location.pathname)}
-                style={{ cursor: 'pointer', backgroundImage: `url(${Paper})`, color: 'lightgrey' }}
+                style={{ cursor: 'pointer', backgroundColor: `#80425F`, color: 'white' }}
               >
                 {props.pageContext.locale === 'de' ? 'EN' : 'DE'}
               </button>
@@ -144,17 +142,6 @@ export default (props: Props) => {
                         )}
                       </div>
                     </div>
-                    <div className="my-5 text-center">
-                      <div>{getTranslatedLabel('MORE_PROJECTS')}</div>
-                      <a
-                        href="https://github.com/firsttris?tab=repositories"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="link-unstyled"
-                      >
-                        https://github.com/firsttris?tab=repositories
-                      </a>
-                    </div>
                   </section>
                 )}
               </div>
@@ -164,8 +151,8 @@ export default (props: Props) => {
                     {getTranslatedLabel('SKILLS')}
                   </h2>
                   <div className="resume-section-content">
-                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.frontend} title={'Frontend'} />
-                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.backend} title={'Backend'} />
+                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.ios} title={'iOS'} />
+                    <ResumeSkillList skills={props.data.skills.nodes[0].childSkillsJson.web} title={'Web'} />
                     <OtherSkillList
                       skills={props.data.skills.nodes[0].childSkillsJson.others}
                       title={getTranslatedLabel('OTHERS')}
@@ -178,14 +165,6 @@ export default (props: Props) => {
                   </h2>
                   <div className="resume-section-content">
                     <EducationList educations={props.data.educations.nodes[0].childEducationsJson.educations} />
-                  </div>
-                </section>
-                <section className="resume-section reference-section mb-5">
-                  <h2 className="resume-section-title text-uppercase font-weight-bold pb-3 mb-3">
-                    {getTranslatedLabel('CERTIFICATIONS')}
-                  </h2>
-                  <div className="resume-section-content">
-                    <CertificationList certifications={props.data.certs.nodes[0].childCertsJson.certs} />
                   </div>
                 </section>
                 <section className="resume-section language-section mb-5">
@@ -214,7 +193,7 @@ export default (props: Props) => {
                   <div className="resume-section-content">
                     <ul className="list-unstyled">
                       <li className="mb-1">{getTranslatedLabel('WATERSPORT')}</li>
-                      <li className="mb-1">{getTranslatedLabel('HOMEAUTOMATION')}</li>
+                      <li className="mb-1">{getTranslatedLabel('READING')}</li>
                     </ul>
                   </div>
                 </section>
@@ -226,7 +205,7 @@ export default (props: Props) => {
       <footer className="footer text-center pt-2">
         <small className="copyright">
           Designed with <i className="fas fa-heart" /> by{' '}
-          <a href="http://themes.3rdwavemedia.com" target="_blank">
+          <a href="http://themes.3rdwavemedia.com" target="_blank" rel="noopener noreferrer">
             Xiaoying Riley
           </a>{' '}
           for developers
@@ -249,9 +228,11 @@ export default (props: Props) => {
   );
 };
 
+export default CV;
+
 export const query = graphql`
   query($locale: String!) {
-    profile: file(relativePath: { eq: "profil.png" }) {
+    profile: file(relativePath: { eq: "profil.jpg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
@@ -265,16 +246,6 @@ export const query = graphql`
         name
       }
     }
-    certs: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "certs" } }) {
-      nodes {
-        childCertsJson {
-          certs {
-            title
-            description
-          }
-        }
-      }
-    }
     opensource: allFile(filter: { name: { eq: $locale }, sourceInstanceName: { eq: "opensource" } }) {
       nodes {
         name
@@ -282,14 +253,14 @@ export const query = graphql`
           id
           projects {
             title
-            company
             description
             from
-            role
-            url
             to
             technologies
-            achievements
+            links {
+              title
+              url
+            }
             location
           }
         }
@@ -302,13 +273,15 @@ export const query = graphql`
           id
           projects {
             title
-            company
             description
             from
             role
             to
             technologies
-            achievements
+            tasks {
+              title
+              details
+            }
             location
           }
         }
@@ -318,11 +291,11 @@ export const query = graphql`
       nodes {
         name
         childSkillsJson {
-          frontend {
+          ios {
             name
             xpInPercentage
           }
-          backend {
+          web {
             name
             xpInPercentage
           }
@@ -337,10 +310,10 @@ export const query = graphql`
           name
           phone
           role
+          address
+          birthday
           social {
             github
-            linkedin
-            website
             xing
           }
         }

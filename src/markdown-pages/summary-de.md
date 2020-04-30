@@ -3,8 +3,6 @@ name: "summary"
 locale: "de"
 ---
 
-Engagierter Softwareentwickler mit 8+ Jahren Erfahrung in der Entwicklung von robustem Code für Web Applikationen.
+Engagierte Softwareentwicklerin mit Erfahrung in der Entwicklung von nativen iOS Apps (8 Jahre) und React Apps (2 Jahre).
 
-Verwaltet mehrere Open Source Projekte neben Freelancing Arbeit für größere Kundenprojekte.
-
-Glaubt an Clean-Code und testgetriebene Entwicklung.
+Ich lege Wert auf strukturierten, wartbaren Code mit möglichst guter Testabdeckung.

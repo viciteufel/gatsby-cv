@@ -5,7 +5,7 @@ export interface Props {
   skill: string;
 }
 
-export const Language = (props: Props) => (
+export const Language = (props: Props): JSX.Element => (
   <li className="mb-2">
     <span className="resume-lang-name font-weight-bold">{props.language}</span>{' '}
     <small className="text-muted font-weight-normal">{props.skill}</small>

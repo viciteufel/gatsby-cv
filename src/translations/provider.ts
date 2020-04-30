@@ -2,7 +2,7 @@ import { messages } from './messages';
 
 let loca = 'en';
 
-export const initLocale = (lang: string) => {
+export const initLocale = (lang: string): void => {
   loca = lang;
 };
 

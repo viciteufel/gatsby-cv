@@ -3,7 +3,7 @@ import { navigate } from 'gatsby';
 import * as React from 'react';
 import './../assets/fontawesome/css/all.css';
 
-export default (): JSX.Element => {
+const Index = (): JSX.Element => {
   if (typeof window !== 'undefined') {
     let locale = 'en';
     if (navigator.language.includes('de')) {
@@ -18,3 +18,5 @@ export default (): JSX.Element => {
     </div>
   );
 };
+
+export default Index;

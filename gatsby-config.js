@@ -3,8 +3,8 @@ const path = require(`path`);
 module.exports = {
   pathPrefix: '/gatsby-cv',
   siteMetadata: {
-    title: 'Tristan Teufel CV',
-    siteUrl: `https://firsttris.github.io`
+    title: 'Victoria Teufel CV',
+    siteUrl: `https://viciteufel.github.io`
   },
   plugins: [
     'gatsby-plugin-typescript',
@@ -20,7 +20,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Tristan Teufel CV`,
+        name: `Victoria Teufel CV`,
         short_name: `CV`,
         start_url: `/`,
         background_color: `#f7f0eb`,
@@ -106,13 +106,6 @@ module.exports = {
       options: {
         path: path.join(__dirname, `src`, `data`, 'skills'),
         name: 'skills'
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: path.join(__dirname, `src`, `data`, 'certs'),
-        name: 'certs'
       },
     },
     {

@@ -1,22 +1,16 @@
 {
-    "educations": [
-        {
-          "titel": "Bachelor of Science (B.Sc.) Business Information Systems",
-          "uni": "Hochschule Karlsruhe – Technik und Wirtschaft",
-          "from": "2008",
-          "to": "2012"
-        },
-        { 
-          "titel": "Higher education entrance qualification in Business Information Systems",
-          "uni": "Handelslehranstalt Gernsbach",
-          "from": "2006",
-          "to": "2008"
-        },
-        {
-          "titel": "IHK Certified Automotive Sales Person",
-          "uni": "Autoboos GmbH",
-          "from": "2003",
-          "to": "2006"
-        }
-      ]
+  "educations": [
+      {
+        "titel": "Bachelor of Science (B.Sc.) Wirtschaftsinformatik",
+        "uni": "Hochschule Karlsruhe – Technik und Wirtschaft",
+        "from": "2008",
+        "to": "2012"
+      },  
+      { 
+        "titel": "Abitur",
+        "uni": "Copernicus Gymnasium Philippsburg",
+        "from": "1999",
+        "to": "2008"
+      }
+    ]
 }

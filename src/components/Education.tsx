@@ -7,7 +7,7 @@ export interface Props {
   to: string;
 }
 
-export const Education = (props: Props) => (
+export const Education = (props: Props): JSX.Element => (
   <li className="mb-2">
     <div className="resume-degree font-weight-bold">{props.titel}</div>
     <div className="resume-degree-org">{props.uni}</div>

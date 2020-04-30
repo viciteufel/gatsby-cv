@@ -1,12 +1,12 @@
 {
-    "role": "Fullstack Developer",
-    "name": "Tristan Teufel",
-    "phone": "+49 176 457 44166",
-    "email": "info@teufel-it.de",
+    "role": "iOS & Web Developer",
+    "name": "Victoria Teufel",
+    "phone": "+49 162 9714885",
+    "email": "vici.gaertner@gmail.com",
+    "address": "Werkstr. 10, 77815 Bühl",
+    "birthday": "14.03.1989, geb. Gärtner",
     "social": {
-        "github": "github.com/firsttris",
-        "linkedin": "de.linkedin.com/in/tristanteufel",
-        "website": "teufel-it.de",
-        "xing": "xing.com/profile/Tristan_Teufel"
+        "github": "github.com/viciteufel",
+        "xing": "xing.com/profile/Victoria_Teufel"
     }
 }

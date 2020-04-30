@@ -1,9 +1,8 @@
 {
-  "name": "teufel-it-gatsby",
-  "description": "teufel-it gatsby",
-  "homepage": "https://teufel-it.de",
+  "name": "gatsby-cv",
+  "description": "Victoria Teufel CV",
   "version": "1.0.0",
-  "author": "tristan teufel <info@teufel-it.de>",
+  "author": "Victoria Teufel <vici.gaertner@gmail.com>",
   "dependencies": {
     "bootstrap": "^4.4.1",
     "gatsby": "^2.19.12",
@@ -31,7 +30,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "build": "rm -Rf public && rm -Rf .cache && gatsby build --prefix-paths",
-    "develop": "gatsby develop",
+    "start": "gatsby develop",
     "predeploy": "rm -Rf public && rm -Rf .cache && npm run build",
     "deploy": "gh-pages -d public",
     "prod": "gatsby serve"

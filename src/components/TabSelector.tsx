@@ -13,11 +13,11 @@ export interface Props {
   onClick: (index: number) => void;
 }
 
-export const TabSelector = (props: Props) => (
+export const TabSelector = (props: Props): JSX.Element => (
   <main>
     {props.items.map((item: Item, index: number) => (
-      <span key={index} onClick={() => props.onClick(index)}>
-        <input type="radio" name="tabs" checked={item.checked} onChange={() => {}} />
+      <span key={index} onClick={(): void => props.onClick(index)}>
+        <input type="radio" name="tabs" checked={item.checked} />
         <label style={{ width: '50%' }}>
           <i className={`mr-2 ${item.icon}`} /> <span className="	d-none d-md-block">{item.name}</span>
         </label>

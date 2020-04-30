@@ -5,7 +5,7 @@ interface Props {
   educations: EudcationProps[];
 }
 
-export const EducationList = (props: Props) => (
+export const EducationList = (props: Props): JSX.Element => (
   <ul className="list-unstyled">
     {props.educations.map((education: EudcationProps, index: number) => (
       <Education key={index} {...education} />

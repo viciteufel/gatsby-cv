@@ -1,425 +1,106 @@
 {
     "projects": [
         {
-            "title": "Entwicklung von Software für Automobilzulieferer",
-            "role": "Developer",
-            "company": "Seeburger ag",
+            "title": "PACE Telematics GmbH",
+            "role": "React Entwicklerin",
             "from": "01/2020",
             "to": "heute",
-            "location": "Bretten/DE",
-            "description": "Unterstützen mit praktischem React Wissen",
-            "achievements": [
-                "Tickets nach Anforderungen entwickelt",
-                "Unit-Tests mit Jest geschrieben",
-                "Projekt mit Prettier integriert"
-            ],
-            "technologies": [
-                "Java 8",
-                "Gerrit",
-                "IntelliJ IDEA",
-                "Typescript",
-                "React",
-                "Material-ui",
-                "Jira",
-                "Redmine"
-            ]
-        },
-        {
-            "title": "Entwicklung von Templates für ein CMS",
-            "role": "Entwickler",
-            "company": "ETECTURE Düsseldorf GmbH",
-            "from": "11/2019",
-            "to": "12/2019",
-            "location": "Düsseldorf/DE",
-            "description": "Unterstützen bei der Erstellung eines neuen CMS für die SWKBank",
-            "achievements": [
-                "Verschiedene Vorlagen mit Bootstrap und Sass erstellt"
-            ],
-            "technologies": [
-                "PHP",
-                "Symphony",
-                "eZ Publish",
-                "JavaScript",
-                "Bootstraps 4",
-                "Sass",
-                "Git",
-                "Jira",
-                "Confluence"
-            ]
-        },
-        {
-            "title": "Weiterentwicklung einer Chat-Applikation",
-            "role": "Entwickler",
-            "company": "Teamviewer GmbH über Gulp",
-            "from": "08/2019",
-            "to": "11/2019",
-            "location": "Göppingen/DE",
-            "description": "Entwicklung und Integration neuer Komponenten für den Chat von Teamviewer und Blizz.com",
-            "achievements": [
-                "Toolchain vom Projekt refactored und aktualisiert (Webpack)",
-                "Komponenten basierte Entwicklung eingeführt",
-                "Komponenten für Chat funktionalität entwickelt",
-                "Technologischer Ansatz für Lazy Loading eines Emoji Pickers"
-            ],
-            "technologies": [
-                "KnockoutJs",
-                "Typescript",
-                "Webpack",
-                "C++",
-                "VisualStudio2017",
-                "Git",
-                "Jira",
-                "Confluence"
-            ]
-        },
-        {
-            "title": "Weiterentwicklung eines Konfigurators für Drogeriemärkte",
-            "role": "Entwickler",
-            "company": "Procter & Gamble (P&G) über typzwo",
-            "from": "08/2019",
-            "to": "12/2019",
             "location": "Karlsruhe/DE",
-            "description": "Weiterentwicklung eines Konfigurators für Drogeriemärkte",
-            "achievements": [
-                "JSX und render Funktionen in VueJs eingeführt",
-                "Komponenten nach automic design principles aufgeteilt",
-                "Schemaerweiterungen in MySQL",
-                "Entwicklung von Komponenten für den Konfigurator"
+            "description": "Entwicklung von React Frontend Apps für Connected Fueling",
+            "tasks": [
+                {
+                    "title": "Connected Fueling",
+                    "details": "React App zur mobilen Bezahlung direkt an der Zapfsäule"
+                },
+                {
+                    "title": "Mobile App Server",
+                    "details": "Entwicklung React App und eines NodeJS Backends das mobile native Apps (Android & iOS) zur Installation zur Verfügung stellt. Bietet eine Schnittstelle für die CI um automatisiert neue App Versionen hochzuladen."
+                },
+                {
+                    "title": "Diverse Produkt Webseiten",
+                    "details": "Entwicklung von statischen Produkt Webseiten mit gatbsy"
+                },
+                {
+                    "title": "Keycloak Theme",
+                    "details": "Entwicklung eines Themes mit React für das Single Sign On System Keycloak"
+                }
             ],
+            "links": [],
             "technologies": [
-                "VueJs",
-                "Vuex",
-                "Javascript",
-                "Webpack",
-                "PHP",
-                "MySQL",
-                "Laravel",
-                "Git",
-                "Jira",
-                "Confluence"
-            ]
-        },
-        {
-            "title": "Entwicklung von Webanwendungen für Daimler-Projekte",
-            "role": "Leitender Entwickler",
-            "company": "ETECTURE GmbH",
-            "from": "10/2017",
-            "to": "06/2019",
-            "location": "Karlsruhe/DE",
-            "description": "Entwicklungsleitung für mehrere Webprojekte (Backend und Frontend) für Kundenprojekte von ETECUTRE.",
-            "achievements": [
-                "Neues Build-System (Webpack) erstellt",
-                "Neues Starter-Kit für react erstellt",
-                "NodeJs-Backend mit Sequelize SQL und PostGres aufgesetzt",
-                "OpenAPI mit SwaggerUI für unsere Middleware eingerichtet",
-                "Jest Snapshop Test-Suite eingerichtet",
-                "JSON-Webtoken-Authentifizierung für unsere Middleware eingerichtet",
-                "Docker Compose Yaml Build-Skripte erstellt",
-                "Docker-Clusters mit Reverse Proxy (Traefik) eingerichtet"
-            ],
-            "technologies": [
-                "React",
-                "Redux",
-                "Reselect",
-                "Immutable.js",
                 "Typescript",
-                "Jest",
+                "StyledComponents",
+                "gatsby",
+                "VSCode",
                 "Webpack",
-                "NodeJs",
-                "PostGres",
                 "Docker",
-                "Traefik",
-                "Sequilize",
-                "REST",
-                "Swagger",
-                "OpenAPI",
-                "Git",
-                "Jira",
-                "Confluence"
+                "NodeJS",
+                "Gitlab"
             ]
         },
         {
-            "title": "Entwicklung einer Spieleplattform",
-            "role": "Entwickler",
-            "company": "Gameforge GmbH über Gulp",
+            "title": "Elternzeit",
+            "role": "",
+            "from": "01/2019",
+            "to": "12/2019",
+            "location": "Bühl/DE",
+            "description": "",
+            "tasks": [],
+            "technologies": [],
+            "links": []
+        },
+        {
+            "title": "PACE Telematics GmbH",
+            "role": "Senior iOS Entwicklerin",
             "from": "05/2017",
-            "to": "09/2017",
+            "to": "12/2018",
             "location": "Karlsruhe/DE",
-            "description": "In Zusammenarbeit mit Gameforge, einem der größten Spiele-Publisher in Europa, entsteht eine neue Spieleplattform.",
-            "achievements": [
-                "Middleware und Microservices erstellt",
-                "Docker-Skripte erstellt",
-                "Implementierung einer globalen Protokollierungslösung für Microservices in einer Containerumgebung",
-                "PoC für die Migration ihrer Web-App von Agnular 1.x zu React",
-                "Erweitern eines Webpack-Job, um die Konfiguration zur Laufzeit dynamisch in das Frontend einzufügen"
+            "description": "Entwicklung einer Smart Car App",
+            "tasks": [
+                {
+                    "title": "PACE Car App",
+                    "details": "iPhone Smart Car App, die sich über einen Bluetooth Dongle mit dem Fahrzeug verbindet und Funktionen bietet wie Fahrtenbuch, Tankstellenfinder und automatischer Notruf."
+                },
+                {
+                    "title": "PACE MapKit",
+                    "details": "Entwicklung eines Frameworks, das Kartendaten cached und feststellen kann auf welcher Straße man sich befindet"
+                }
             ],
+            "links": [],
             "technologies": [
-                "Angular 1.x",
-                "React",
-                "Redux",
-                "REST",
-                "Docker",
-                "Kubernetes",
-                "NodeJs",
-                "Git",
-                "Jira",
-                "Confluence",
-                "Webpack",
-                "Swagger",
-                "OpenAPI"
-            ]
-        },
-        {
-            "title": "Backend Entwicklung eines Terminplanungssystems",
-            "role": "Entwickler",
-            "company": "Termin App GmbH (Timify) über Etengo",
-            "from": "01/2017",
-            "to": "04/2017",
-            "location": "Munich/DE",
-            "description": "Backend-Entwicklung mit NodeJs für Timify. Ein Startup aus München, das ein Terminplanungssystem für mittelständische Unternehmen erstellt",
-            "achievements": [
-                "Refactored Microservices",
-                "Unit-Tests mit Lab erstellt",
-                "Integrationstestsuite mit Postman & Newman erstellt",
-                "Neue Vorlage für Lout erstellt (API-Dokumentation für HapiJs)",
-                "Eine neue Mongo-DB-Schicht mit promise Unterstützung erstellt"
-            ],
-            "technologies": [
-                "JavaScript",
-                "NodeJs",
-                "MongoDb",
-                "HapiJs",
-                "Lout",
-                "Lab",
-                "Jira",
-                "Confluence",
-                "Git"
-            ]
-        },
-        {
-            "title": "Angular 1.x Entwicklung",
-            "role": "Entwickler",
-            "company": "Cyber Manufaktur GmbH",
-            "from": "03/2016",
-            "to": "12/2016",
-            "location": "Karlsruhe/DE",
-            "description": "Entwicklung verschiedener Angular 1.x-Komponenten für die Cyber Manufaktur GmbH",
-            "achievements": [
-                "Einen Webpack 1 Build Job für unser Angular 1.x Projekt erstellt",
-                "JsPlump mit Angular 1.x integriert zum Erstellen eines Diagramms basierend auf einer JSON-Datei",
-                "Angular 1.x-Komponenten für Kunden der Cyber Manufaktur GmbH erstellt",
-                "Einige PHP & Wordpress-Entwicklung"
-            ],
-            "technologies": [
-                "Angular 1.x",
-                "Webstorm",
-                "JavaScript",
-                "jQuery",
-                "PHP",
-                "Wordpress",
-                "JsPlump",
-                "Git",
-                "BitBucket"
-            ]
-        },
-        {
-            "title": "Entwicklung eines Inkassosoftware-Systems",
-            "role": "Entwickler",
-            "company": "arvato Financial Solutions - Bertelsmann SE & Co. KGaA",
-            "from": "01/2015",
-            "to": "12/2015",
-            "location": "Baden-Baden/DE",
-            "description": "Java-Entwicklung in einer der Java Enterprise Applications von arvato für das Forderungsmanagement.",
-            "achievements": [
-                "Entwicklung / Abdeckung verschiedener Artefakte von der Anforderung bis zum Go-Live",
-                "Requirements Engineering",
-                "Schemaänderungen in Oracle SQL",
-                "Testgetriebene Entwicklung",
-                "Unit-Tests mit JUnit",
-                "Mapping erstellt",
-                "Groovy-Skripte für erweiterte Datentransformation erstellt",
-                "Dokumentation in Confluence"
-            ],
-            "technologies": [
-                "Eclipse",
-                "Maven",
-                "Java",
-                "Java 8",
-                "JUnit",
-                "Confluence",
-                "Jira",
-                "Oracle SQL Developer",
-                "Subversion",
-                "Groovy"
-            ]
-        },
-        {
-            "title": "jQuery mit Oracle Siebel OpenUI",
-            "role": "Entwickler",
-            "company": "Swisscom (Switzerland) Ltd über ec4u",
-            "from": "06/2014",
-            "to": "12/2014",
-            "location": "Bern/CH",
-            "description": "Oracle Siebel OpenUI ist ein leichtes jQuery-Frontend für Oracle Siebel CRM. Erkundung einer besseren Benutzerfreundlichkeit in SiebelCRM durch die Verwendung von jQuery UI Widgets und Siebel OpenUI.",
-            "achievements": [
-                "Halten von Schulungen zu HTML, CSS und JavaScript",
-                "Erstellt ein neues CSS-Theme für Oracle Siebel OpenUI",
-                "Neue Unternehmensdienste mit Siebel Tools erstellt",
-                "Automatisierte Tests mit Selenium IDE"
-            ],
-            "technologies": [
-                "Oracle siebel CRM",
-                "Firebug IDE",
-                "Selenium IDE",
-                "JavaScript",
-                "jQuery",
-                "jQuery UI"
-            ]
-        },
-        {
-            "title": "jQuery mit Oracle Siebel OpenUI",
-            "role": "Entwickler",
-            "company": "JTI International S.A. über ec4u",
-            "from": "11/2013",
-            "to": "06/2014",
-            "location": "Madrid/ES",
-            "description": "Oracle Siebel OpenUI ist ein leichtes jQuery-Frontend für Oracle Siebel CRM. Rapid Prototyping von jQuery UI Widgets und Views für verschiedene Applets.",
-            "achievements": [
-                "Requirements Engineering",
-                "Widgets nach Anforderungen erstellt",
-                "Prototyping von Applets",
-                "Automatisierte Tests mit Selenium IDE"
-            ],
-            "technologies": [
-                "Oracle siebel CRM",
-                "Firebug IDE",
-                "Selenium IDE",
-                "JavaScript",
-                "jQuery",
-                "jQuery UI"
-            ]
-        },
-        {
-            "title": "Oracle on Demand CRM Desktop Integration",
-            "role": "Entwickler",
-            "company": "SGS S.A. über ec4u",
-            "from": "01/2014",
-            "to": "03/2014",
-            "location": "Camberley/GB",
-            "description": "Oracle on Demand CRM Desktop ist ein Outlook-Plug-In, das mit geeigneten Webservices interagiert und mit JavaScript und XML anpassbar ist.",
-            "achievements": [
-                "Mit XML erstellte Datenzuordnungen",
-                "Transformationslogik mit JavaScript erstellt",
-                "Integration neuer Felder"
-            ],
-            "technologies": [
-                "Oracle on Demand CRM",
-                "JavaScript",
-                "XML",
-                "Nodepad++",
-                "Subversion"
-            ]
-        },
-        {
-            "title": "JavaEE WebApp mit Oracle ADF",
-            "role": "Entwickler",
-            "company": "Stryker S.A. über ec4u",
-            "from": "12/2012",
-            "to": "11/2013",
-            "location": "Duisburg/DE, Montreux/CH, Lyon/FR, Newbury/UK",
-            "description": "Stryker - New Sales Attribution Tool: Planung, Design und Implementierung einer JavaEE-Anwendung für das multinationale (EMEA) und mehrsprachige (Englisch, Deutsch, Französisch, Italienisch) Gebietsmanagement. Die fachliche Beratung von Ec4u deckt alle Prozesse ab: Bedarfs- und Bedarfsanalyse, Projektleitung und -management, Entwicklung, Anpassung, Lieferung und Schulung.",
-            "achievements": [
-                "Unabhängige Entwicklung einer JavaEE-Webanwendung, die Prozesse aus dem Gebietsmanagement der Oracle Sales Cloud (Fusion CRM) vereinheitlicht und vereinfacht",
-                "Entwicklung von SOA-Schnittstellen zur Integration von Oracle Sales Cloud (Fusion CRM) mit anderen Legacy-Systemen",
-                "Unabhängige Entwicklung einer JavaEE / Oracle ADF-Webanwendung, die den Prozess der Verwaltung von Rechnungsausnahmen darstellt",
-                "Verwaltung und Bereitstellung für Oracle Java & Database Cloud Service"
-            ],
-            "technologies": [
-                "Oracle ADF",
-                "Oracle Sales Cloud",
-                "Oracle Fusion CRM",
-                "SoapUI",
-                "JDeveloper",
-                "SQLDeveloper",
-                "Oracel Public Cloud",
-                "Java",
-                "JavaEE",
-                "Oracle SOA Suite"
-            ]
-        },
-        {
-            "title": "Cordova App mit jQuery Mobile",
-            "role": "Leitender Entwickler",
-            "company": "ec4u expert consulting ag",
-            "from": "09/2012",
-            "to": "12/2014",
-            "location": "Karlsruhe/DE",
-            "description": "Unabhängige Entwicklung einer plattformübergreifenden mobilen Hybridanwendung für die Personalbeschaffung. (Ec4u-Jobs in AppStore und PlayStore)",
-            "achievements": [
-                "Entwicklung einer hybriden mobilen Anwendung mit jQuery mobile und PhoneGap",
-                "Paketierung und Kompilierung für iOS und Android",
-                "Design und Layout von Benutzeroberfläche und Grafik",
-                "Integration von REST Services aus Wordpress (JSON)",
-                "Pre, Post Processing und Transformation von Daten",
-                "Zertifikatsverwaltung und Veröffentlichung im Apple App-Store und Google Play-Store"
-            ],
-            "technologies": [
-                "PhoneGap",
-                "Cordova",
-                "Eclipse",
+                "Swift",
                 "Xcode",
-                "Adobe Photoshop CS5",
-                "Wordpress",
-                "REST",
-                "JavaScript",
-                "jQuery Mobile",
-                "jQuery"
+                "Carthage",
+                "Fastlane",
+                "Gitlab"
             ]
         },
         {
-            "title": "Oracle Siebel CRM Webservices Integration",
-            "role": "Student",
-            "company": "ec4u expert consulting ag",
-            "from": "03/2012",
-            "to": "08/2012",
+            "title": "CAS Software AG",
+            "role": "iOS Entwicklerin",
+            "from": "10/2012",
+            "to": "04/2017",
             "location": "Karlsruhe/DE",
-            "description": "Bachelorarbeit: Entwicklung einer mobilen Webanwendung, die den Prozess für Urlaubsanträge von Oracle Siebel CRM abbildet.",
-            "achievements": [
-                "Entwicklung einer mobilen Webanwendung auf Basis von jQuery mobile",
-                "Integration eines SOAP-Webservice von Oracle Siebel CRM",
-                "Datentransformation"
+            "description": "Entwicklung von iOS Apps für Projekt bei Daimler und bei CAS Produkten",
+            "tasks": [
+                {
+                    "title": "MB Kundencenter App (Daimler)",
+                    "details": "iPhone App zur Begleitung des Abholvorgangs in Mercedes Benz Kundencentern."
+                },
+                {
+                    "title": "MB Truck App (Daimler)",
+                    "details": "iPad App zur Präsentation und Konfiguration von Mercedes LKWs."
+                },
+                {
+                    "title": "M.Mobile (CAS)",
+                    "details": "iPad App zur Konfiguration von generischen Produkten."
+                }
             ],
+            "links": [],
             "technologies": [
-                "Eclipse",
-                "SoapUI",
-                "SOAP",
-                "PHP",
-                "JavaScript",
-                "jQuery",
-                "jQuery Mobile"
-            ]
-        },
-        {
-            "title": "Evaluierung der Google Checkout & Wallet-API",
-            "role": "Student",
-            "company": "ec4u expert consulting ag",
-            "from": "09/2011",
-            "to": "03/2012",
-            "location": "Karlsruhe/DE",
-            "description": "Anwendungsprojekt im Rahmen des Studiums an der Hochschule Karlsruhe: Beispielhafte Implementierung einer mobilen Webanwendung zur Evaluierung der Google Payment-APIs (Google Checkout und Google Wallet).",
-            "achievements": [
-                "Entwicklung einer mobilen Webanwendung auf Basis von jQuery mobile",
-                "Entwicklung eines PHP-basierten Webshops",
-                "Integration der Google Checkout-API (PHP)",
-                "Integration der Google Wallet API (JavaScript)",
-                "Authentifizierung mit Google OAuth"
-            ],
-            "technologies": [
-                "Netbeans",
-                "PHP",
-                "JavaScript",
-                "jQuery",
-                "jQuery Mobile"
+                "Swift",
+                "Objective-C",
+                "Xcode",
+                "Jira"
             ]
         }
     ]

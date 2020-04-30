@@ -1,101 +1,31 @@
 {
     "projects": [
         {
-            "title": "html-webpack-multi-build-plugin",
-            "role": "",
-            "url": "https://github.com/firsttris/html-webpack-multi-build-plugin",
-            "company": "Teufel-IT",
-            "from": "07/2018",
+            "title": "SendToKodi",
+            "from": "01/2020",
             "to": "today",
-            "location": "Github",
-            "description": "This plugin simplifies the creation of script tags for module and nomodule for a webpack multi build configuration.",
-            "achievements": [
-                "Created a multi build plugin for html-webpack-plugin",
-                "Set up bundles for ES6+ (modern) and ES5 (older browsers)",
-                "47 stars, 3 contributors"
+            "location": "iOS App Store",
+            "description": "iOS app that can send streaming links to the Kodi media center.",
+            "tasks": [],
+            "links": [
+                {
+                    "title": "App Store",
+                    "url": "https://itunes.apple.com/de/app/sendtokodi/id1113517603?mt=8&uo=2"
+                },
+                {
+                    "title": "App Description",
+                    "url": "https://firsttris.github.io/sendtokodi-gatsby/"
+                },
+                {
+                    "title": "Report about the app on stadt-bremerhaven.de",
+                    "url": "https://stadt-bremerhaven.de/sendtokodi-ios-app-uebergibt-soundcloud-und-youtube-inhalte/"
+                }
             ],
             "technologies": [
-                "JavaScript",
-                "Webpack API",
-                "Git",
-                "Github",
-                "html-webpack-plugin"
-            ]
-        },
-        {
-            "title": "VSCode Addon Jest Runner",
-            "role": "",
-            "url": "https://github.com/firsttris/vscode-jest-runner.git",
-            "company": "Teufel-IT",
-            "from": "12/2017",
-            "to": "today",
-            "location": "Github",
-            "description": "Simple way to run or debug a single or multiple Jest tests from context menu. As it is possible in IntelliJ / Webstorm",
-            "achievements": [
-                "Created a VSCode Addon with Typescript",
-                "Possibility to run Jest tests from context & command menu",
-                "36,113 active installs",
-                "5 star rating in Visual Studio Marketplace",
-                "30 stars, 14 contributors"
-            ],
-            "technologies": [
-                "Typescript",
-                "VSCode API",
-                "Git",
-                "Github",
-                "Jest"
-            ]
-        },
-        {
-            "title": "SendToKodi iOS App",
-            "role": "",
-            "url": "https://github.com/firsttris/plugin.video.sendtokodi",
-            "company": "Teufel-IT",
-            "from": "01/2016",
-            "to": "today",
-            "location": "Github",
-            "description": "SendToKodi is a iOS App which resolves various video streams using youtube-dl to play them on Kodi",
-            "achievements": [
-                "Created a kodi-addon (python) which extracts video streams from website urls with YoutubeDL",
-                "Set up a Travis CI job which regularly re-builds the kodi-addon with a recent YoutubeDL version",
-                "Developed a native iOS App with Swift which uses the integrated share option to send links to Kodi",
-                "Added an InApp Payment for multiple hosts",
-                "The InApp Payment achieves about 15$ a quater, which is enough to pay the developer fee",
-                "Two other developers created Apps which make use of my python plugin (see Github Page)",
-                "28 stars, 5 contributors"
-            ],
-            "technologies": [
-                "Python",
                 "Swift",
                 "Xcode",
-                "Travis CI",
-                "Kodi",
-                "Git",
-                "Github"
-            ]
-        },
-        {
-            "title": "mfrc522-rpi",
-            "role": "",
-            "url": "https://github.com/firsttris/mfrc522-rpi",
-            "company": "Teufel-IT",
-            "from": "01/2016",
-            "to": "today",
-            "location": "Github",
-            "description": "JavaScript class to control MFRC522 RFID Module with your Raspberry-pi",
-            "achievements": [
-                "Control MFRC522 Module with your Raspberry PI & Javascript",
-                "Reverse Engineered Arduino C++ Code to JavaScript (NodeJs)",
-                "Set up a Testing Suite",
-                "71 stars, 3 contributors"
-            ],
-            "technologies": [
-                "Raspberry PI",
-                "MFRC522",
-                "JavaScript",
-                "NodeJs",
-                "Git",
-                "Github"
+                "Fastlane",
+                "CocoaPods"
             ]
         }
     ]

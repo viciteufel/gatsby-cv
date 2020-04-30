@@ -3,8 +3,6 @@ name: "summary"
 locale: "en"
 ---
 
-Dedicated software engineer with 8+ years experience developing robust code for web applications. 
+Dedicated and structured software engineer with experience in native iOS development (8 years) and React development (2 years).
 
-Managing multiple open source projects additionaly to freelancing for larger customer software projects.
-
-Believes in Clean-Code and Test Driven Development.
+Structured, maintainable code with high test coverage is a priority for me.
