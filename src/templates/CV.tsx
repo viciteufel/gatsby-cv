@@ -70,13 +70,15 @@ const CV = (props: Props): JSX.Element => {
     }
   ]);
 
-  React.useEffect(() => {
-    setTimeout(() => scrollToY(), 100);
-    const languages = [german, english];
-    const selectedLanguage = languages.find(l => window.location.pathname.includes(`/${l.code}/`));
-    const availableLanguages = languages.filter(l => !window.location.pathname.includes(`/${l.code}/`));
-    setLanguage({ selectedLanguage, availableLanguages });
-  }, [window.location.pathname]);
+  if (typeof window !== 'undefined') {
+    React.useEffect(() => {
+      setTimeout(() => scrollToY(), 100);
+      const languages = [german, english];
+      const selectedLanguage = languages.find(l => window.location.pathname.includes(`/${l.code}/`));
+      const availableLanguages = languages.filter(l => !window.location.pathname.includes(`/${l.code}/`));
+      setLanguage({ selectedLanguage, availableLanguages });
+    }, [window.location.pathname]);
+  }
 
   const didSelectLanguage = (language: Language): void => {
     navigate(`${language.code}/${items[selectedItem].path}`);
