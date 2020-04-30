@@ -8,7 +8,7 @@ interface Props {
 export const ProjectList = (props: Props): JSX.Element => (
   <div>
     <h4 className="resume-timeline-item-desc-heading font-weight-bold">{getTranslatedLabel('ACHIEVEMENTS')}</h4>
-    <table style={{ margin: '0px 0px 17px 0px' }}>
+    <table className="table table-borderless" style={{ margin: '0px 0px 17px 0px' }}>
       <tbody>
         {props.projects.map((project, index: number) => (
           <tr key={index}>
