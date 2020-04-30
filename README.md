@@ -2,25 +2,11 @@
 
 Curriculum Vitae with [gatsbyJS](https://www.gatsbyjs.org/) a static page generator for [reactJs](https://reactjs.org/).
 
-## Motivation
-
-- Most recruiters request a CV in Word to convert it in their layout. Often they even tweak the history in your CV in the hope's to win the project. that's why i decited to create an HTML CV which cannot be changed.
-
-- With a CV coded Javascript you could already show some of your skills by providing the CV.
-
-- It's easier to always have the exact same styling / format and just change the data.
-
-- I wanted to have a multi-language CV.
-
 ## Page
 
-https://firsttris.github.io/gatsby-cv/
+https://viciteufel.github.io/gatsby-cv/
 
 ## Template, Author & License
-
-Instead of creating my own design, which would probably not so awesome, i decided to search on Github if someone already had a similar idea which i could fork and integrate with GatsbyJs.
-
-This is what i used as source:
 
 Source https://github.com/xriley/pillar-theme
 
@@ -37,4 +23,4 @@ Based on best practices of [gatsbyJS](https://www.gatsbyjs.org/)
 - src/translations - Localization
 - src/assets - Assets, pictures and stuff
 
-for more information on how to get started with Gatsby if refer to https://www.gatsbyjs.org/docs/
+for more information on how to get started with Gatsby refer to https://www.gatsbyjs.org/docs/
