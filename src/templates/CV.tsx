@@ -224,7 +224,7 @@ const CV = (props: Props): JSX.Element => {
         <small className="source-code">
           <i className="fab fa-github" />{' '}
           <a
-            href="https://github.com/firsttris/gatsby-cv"
+            href="https://github.com/viciteufel/gatsby-cv"
             className="link-unstyled"
             target="_blank"
             rel="noopener noreferrer"
