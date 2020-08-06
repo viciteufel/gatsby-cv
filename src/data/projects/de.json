@@ -14,7 +14,7 @@
                 },
                 {
                     "title": "Mobile App Server",
-                    "details": "Entwicklung React App und eines NodeJS Backends das mobile native Apps (Android & iOS) zur Installation zur Verfügung stellt. Bietet eine Schnittstelle für die CI um automatisiert neue App Versionen hochzuladen."
+                    "details": "Entwicklung einer React App und eines NodeJS Backends das mobile native Apps (Android & iOS) zur Installation zur Verfügung stellt. Bietet eine Schnittstelle für die CI um automatisiert neue App Versionen hochzuladen."
                 },
                 {
                     "title": "Diverse Produkt Webseiten",
@@ -38,21 +38,10 @@
             ]
         },
         {
-            "title": "Elternzeit",
-            "role": "",
-            "from": "01/2019",
-            "to": "12/2019",
-            "location": "Bühl/DE",
-            "description": "",
-            "tasks": [],
-            "technologies": [],
-            "links": []
-        },
-        {
             "title": "PACE Telematics GmbH",
             "role": "Senior iOS Entwicklerin",
             "from": "05/2017",
-            "to": "12/2018",
+            "to": "12/2019",
             "location": "Karlsruhe/DE",
             "description": "Entwicklung einer Smart Car App",
             "tasks": [

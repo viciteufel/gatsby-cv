@@ -2,27 +2,27 @@
     "projects": [
         {
             "title": "PACE Telematics GmbH",
-            "role": "React Entwicklerin",
+            "role": "React Developer",
             "from": "01/2020",
-            "to": "heute",
+            "to": "today",
             "location": "Karlsruhe/DE",
-            "description": "Entwicklung von React Frontend Apps für Connected Fueling",
+            "description": "Development of React Frontend Apps for Connected Fueling",
             "tasks": [
                 {
                     "title": "Connected Fueling",
-                    "details": "React App zur mobilen Bezahlung direkt an der Zapfsäule"
+                    "details": "React App for mobile payment directly at the fueling pump"
                 },
                 {
                     "title": "Mobile App Server",
-                    "details": "Entwicklung React App und eines NodeJS Backends das mobile native Apps (Android & iOS) zur Installation zur Verfügung stellt. Bietet eine Schnittstelle für die CI um automatisiert neue App Versionen hochzuladen."
+                    "details": "Development of a  React App and a NodeJS backend that delivers mobile native apps (Android & iOS) for installation. Offers an interface for CI to upload new app versions automatically."
                 },
                 {
-                    "title": "Diverse Produkt Webseiten",
-                    "details": "Entwicklung von statischen Produkt Webseiten mit gatbsy"
+                    "title": "Multiple product websites",
+                    "details": "Development of static product websites with gatsby"
                 },
                 {
                     "title": "Keycloak Theme",
-                    "details": "Entwicklung eines Themes mit React für das Single Sign On System Keycloak"
+                    "details": "Development of a theme with React for the Single Sign On System Keycloak"
                 }
             ],
             "links": [],
@@ -38,31 +38,20 @@
             ]
         },
         {
-            "title": "Elternzeit",
-            "role": "",
-            "from": "01/2019",
-            "to": "12/2019",
-            "location": "Bühl/DE",
-            "description": "",
-            "tasks": [],
-            "technologies": [],
-            "links": []
-        },
-        {
             "title": "PACE Telematics GmbH",
-            "role": "Senior iOS Entwicklerin",
+            "role": "Senior iOS Developer",
             "from": "05/2017",
-            "to": "12/2018",
+            "to": "12/2019",
             "location": "Karlsruhe/DE",
-            "description": "Entwicklung einer Smart Car App",
+            "description": "Development of a Smart Car App",
             "tasks": [
                 {
                     "title": "PACE Car App",
-                    "details": "iPhone Smart Car App, die sich über einen Bluetooth Dongle mit dem Fahrzeug verbindet und Funktionen bietet wie Fahrtenbuch, Tankstellenfinder und automatischer Notruf."
+                    "details": "iPhone Smart Car App, that connects to the car via bluetooth dongle and offers functionality like logbook, fuel station finder and automatic emergency call."
                 },
                 {
                     "title": "PACE MapKit",
-                    "details": "Entwicklung eines Frameworks, das Kartendaten cached und feststellen kann auf welcher Straße man sich befindet"
+                    "details": "Development of a framework that caches map data and is able to detect on which road the user is driving"
                 }
             ],
             "links": [],
@@ -76,23 +65,23 @@
         },
         {
             "title": "CAS Software AG",
-            "role": "iOS Entwicklerin",
+            "role": "iOS Developer",
             "from": "10/2012",
             "to": "04/2017",
             "location": "Karlsruhe/DE",
-            "description": "Entwicklung von iOS Apps für Projekt bei Daimler und bei CAS Produkten",
+            "description": "Development of iOS Apps for projects at Daimler and for CAS products",
             "tasks": [
                 {
                     "title": "MB KC App(Daimler)",
-                    "details": "iPhone App zur Begleitung des Abholvorgangs in Mercedes Benz Kundencentern."
+                    "details": "iPhone App that accompanies the collection process of a car at the in Mercedes Benz customer center."
                 },
                 {
                     "title": "MB Truck App (Daimler)",
-                    "details": "iPad App zur Präsentation und Konfiguration von Mercedes LKWs."
+                    "details": "iPad App for presenting and configuring Mercedes trucks."
                 },
                 {
                     "title": "M.Mobile (CAS)",
-                    "details": "iPad App zur Konfiguration von generischen Produkten."
+                    "details": "iPad App for configuring generic products"
                 }
             ],
             "links": [],
